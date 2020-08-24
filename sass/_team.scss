@@ -1,0 +1,148 @@
+.team {
+  text-align: center;
+  padding-top: 10rem;
+  grid-column: full-start / full-end;
+  background-color: $color-grey-light-1;
+
+  &__container {
+    padding: 10rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5rem;
+  }
+}
+
+.card {
+  height: 50rem;
+  position: relative;
+  perspective: 100rem;
+
+  &:not(:last-child) {
+    margin-bottom: 10rem;
+  }
+
+  &__side {
+    overflow: hidden;
+    background-color: transparent;
+    box-shadow: 0rem 0.8rem 0.6rem $color-grey-dark-2;
+    border-radius: 3rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 55rem;
+    backface-visibility: hidden;
+    transition: all 0.8s;
+    transform-style: preserve-3d;
+
+    &--front {
+      display: flex;
+      flex-direction: column;
+
+      background-color: $color-white;
+    }
+
+    &--back {
+      transform: rotateY(180deg);
+      background-image: linear-gradient(
+        to right bottom,
+        $color-primary-dark-1,
+        $color-primary
+      );
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      padding: 2rem;
+      position: relative;
+
+      &-image {
+        height: 10rem;
+        width: 10rem;
+        border-radius: 50%;
+        align-self: center;
+        margin-bottom: 2rem;
+      }
+
+      &-text {
+        &::before {
+          content: "\201C";
+          font-family: sans-serif;
+          position: absolute;
+          font-size: 20rem;
+          top: 2.5rem;
+          color: rgba($color-white, 0.2);
+        }
+      }
+    }
+  }
+
+  // Card Flip Effect
+  &:hover &__side--front {
+    transform: rotateY(180deg);
+  }
+
+  &:hover &__side--back {
+    transform: rotateY(0);
+  }
+
+  &__picture {
+    margin-bottom: auto;
+    height: 25rem;
+    background-position: center;
+    background-size: cover;
+    clip-path: ellipse(90% 100% at 50% 0%);
+
+    &--1 {
+      background-image: url(../img/test.jpeg);
+    }
+  }
+
+  &__information-container {
+    display: grid;
+    grid-template-rows: repeat(4, min-content);
+    grid-row-gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  &__name {
+    font-family: $font-headers;
+
+    &:before {
+      content: "name";
+      color: $color-primary;
+      text-transform: uppercase;
+    }
+  }
+
+  &__position {
+    &::before {
+      content: "position";
+      color: $color-primary;
+      text-transform: uppercase;
+    }
+  }
+
+  &__year {
+    &::before {
+      content: "year";
+      color: $color-primary;
+      text-transform: uppercase;
+    }
+  }
+
+  &__major {
+    &::before {
+      content: "major";
+      color: $color-primary;
+      text-transform: uppercase;
+    }
+  }
+
+  &__contact {
+    &::before {
+      content: "contact";
+      color: $color-primary;
+      text-transform: uppercase;
+    }
+  }
+}

@@ -1,0 +1,96 @@
+@keyframes move-up-and-down {
+  0% {
+    transform: translateY(2rem);
+  }
+
+  50% {
+    transform: translateY(-2rem);
+  }
+
+  100% {
+    transform: translateY(2rem);
+  }
+}
+
+@mixin hover-effect {
+  position: fixed;
+  color: $color-secondary;
+  border: 0.2rem solid $color-secondary;
+}
+
+.goals {
+  margin-top: -12vh;
+  padding: 20rem 0 10rem 0;
+  text-align: center;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-white, 0.9),
+      rgba($color-white, 0.9)
+    ),
+    url(../img/group3.JPG);
+  background-size: cover;
+  background-position: center;
+  grid-column: full-start / full-end;
+
+  &__container {
+    padding: 15rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__element {
+    width: 25rem;
+    height: 25rem;
+    border-radius: 100%;
+    background-color: transparent;
+    font-size: 2rem;
+    box-shadow: 0.5rem 0.5rem 1rem rgba($color-grey-dark, 0.8);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    animation-name: move-up-and-down;
+    animation-timing-function: ease-in-out;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+
+    &--1 {
+      animation-delay: 1s;
+      fill: $color-magenta;
+      text-transform: uppercase;
+      color: $color-magenta;
+      border: 0.2rem solid rgba($color-magenta, 0.5);
+    }
+
+    &--2 {
+      animation-delay: 1.5s;
+      fill: $color-vermilion;
+      text-transform: uppercase;
+      color: $color-vermilion;
+      border: 0.2rem solid rgba($color-vermilion, 0.5);
+    }
+
+    &--3 {
+      animation-delay: 0.5s;
+      fill: $color-emerald;
+      text-transform: uppercase;
+      color: $color-emerald;
+      border: 0.2rem solid rgba($color-emerald, 0.5);
+    }
+
+    &--4 {
+      animation-delay: 2s;
+      fill: $color-primary;
+      text-transform: uppercase;
+      color: $color-primary;
+      border: 0.2rem solid rgba($color-primary, 0.5);
+    }
+  }
+
+  &__icon {
+    width: 5rem;
+    height: 5rem;
+  }
+}
