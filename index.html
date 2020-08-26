@@ -19,6 +19,32 @@
     <title>Digi Digits | Putting the world within arms' reach</title>
   </head>
   <body>
+    <nav class="navbar">
+      <div class="navbar__menu">
+        <div class="navbar__line navbar__line--1"></div>
+        <div class="navbar__line navbar__line--2"></div>
+        <div class="navbar__line navbar__line--3"></div>
+      </div>
+
+      <ul class="navbar__list">
+        <li class="navbar__item">
+          <a href="#" class="navbar__link">About Us</a>
+        </li>
+        <li class="navbar__item">
+          <a href="#" class="navbar__link">Our Goals</a>
+        </li>
+        <li class="navbar__item">
+          <a href="#" class="navbar__link">Our Team</a>
+        </li>
+        <li class="navbar__item">
+          <a href="#" class="navbar__link">Gallery</a>
+        </li>
+        <li class="navbar__item">
+          <a href="#" class="navbar__link">Contact Us</a>
+        </li>
+      </ul>
+    </nav>
+
     <div class="container">
       <header class="header">
         <h1 class="header__heading heading-1">Digi Digits</h1>
@@ -72,8 +98,8 @@
             <p>Research</p>
           </div>
           <div class="goals__element goals__element--2">
-            <svg class="goals__icon goals__icon-pencil">
-              <use xlink:href="img/sprite.svg#icon-pencil"></use>
+            <svg class="goals__icon goals__icon-edit">
+              <use xlink:href="img/sprite.svg#icon-edit"></use>
             </svg>
             <p>Design</p>
           </div>
@@ -423,7 +449,20 @@
 
       <!-- Project Section -->
 
-      <section class="project"></section>
+      <section class="project">
+        <div class="project__instagram" id="instafeed">
+          <!-- SnapWidget -->
+          <script src="https://snapwidget.com/js/snapwidget.js"></script>
+          <iframe
+            src="https://snapwidget.com/embed/865824"
+            class="snapwidget-widget"
+            allowtransparency="true"
+            frameborder="0"
+            scrolling="no"
+            style="border: none; overflow: hidden; width: 100%;"
+          ></iframe>
+        </div>
+      </section>
 
       <!-- Contact Section -->
 
@@ -480,6 +519,7 @@
               <button class="btn btn--fill">Submit</button>
             </div>
           </form>
+
           <p class="contact__text paragraph">
             If you are interested in joining or have any questions, please email
             us through the form! If you would like to recieve updates about
@@ -487,30 +527,57 @@
             L-DigiDigits-subscribe-request@lists.psu.edu and it will
             automatically add you to our server.
           </p>
+
+          <div class="contact__donate">
+            <h3 class="heading heading-3--dark contact__donate-text">
+              help us put the world within arms' reach!
+            </h3>
+
+            <button class="contact__btn btn--fill">Donate! &rarr;</button>
+          </div>
         </div>
       </section>
 
       <!-- Footer -->
 
       <footer class="footer">
-        <div class="footer__container">
+        <div class="footer__row--1">
           <svg class="footer__icon footer__icon-mail">
-            <use xlink:href="img/sprite.svg#icon-mail"></use>
+            <a href="#"><use xlink:href="img/sprite.svg#icon-mail"></use></a>
           </svg>
           <svg class="footer__icon footer__icon-instagram">
-            <use xlink:href="img/sprite.svg#icon-instagram"></use>
+            <a href="#">
+              <use xlink:href="img/sprite.svg#icon-instagram"></use>
+            </a>
           </svg>
           <svg class="footer__icon footer__icon-twitter">
-            <use xlink:href="img/sprite.svg#icon-twitter"></use>
+            <a href="#"><use xlink:href="img/sprite.svg#icon-twitter"></use></a>
           </svg>
           <svg class="footer__icon footer__icon-facebook">
-            <use xlink:href="img/sprite.svg#icon-facebook"></use>
+            <a href="#">
+              <use xlink:href="img/sprite.svg#icon-facebook2"></use>
+            </a>
           </svg>
           <svg class="footer__icon footer__icon-github">
-            <use xlink:href="img/sprite.svg#icon-github"></use>
+            <a href="#"><use xlink:href="img/sprite.svg#icon-github"></use></a>
           </svg>
+        </div>
+
+        <div class="footer__row--2">
+          <ul class="footer__list">
+            <li><a href="#" class="footer__item">About</a></li>
+            <li><a href="#" class="footer__item">Contact Us</a></li>
+            <li><a href="#" class="footer__item">Donate</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__row--3">
+          <p>Copyright &copy; 2020 Digi Digits. All Rights Reserved</p>
         </div>
       </footer>
     </div>
+
+    <script src="https://unpkg.com/scrollreveal@3.3.2/dist/scrollreveal.min.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>

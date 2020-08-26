@@ -10,7 +10,7 @@ $color-secondary: #ffd300;
 $color-grey-light-1: #f7f7f7;
 $color-grey-light-2: #eee;
 
-$color-grey-dark: #777;
+$color-grey-dark-1: #777;
 $color-grey-dark-2: #999;
 $color-grey-dark-3: #333;
 
@@ -33,13 +33,24 @@ $font-display: "Roboto", sans-serif;
   box-sizing: inherit;
 }
 
+a {
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+a:hover,
+a:link,
+a:visited {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 html {
   box-sizing: border-box;
   font-size: 62.5%;
 }
 
 body {
-  padding: 2rem;
   font-family: $font-display;
   color: $color-primary;
   line-height: 1.6;
@@ -112,14 +123,14 @@ body {
     font-weight: 400;
     display: inline-block;
     letter-spacing: 0.5rem;
-  
+
     // effects
     transition: all 0.5s;
-  
+
     &:hover {
       transform: scale(1.05) translateY(-1rem) skew(2deg);
     }
-  
+
     &::before {
       content: "";
       display: block;
@@ -128,6 +139,28 @@ body {
       padding-bottom: 20px;
       border-bottom: 1.2rem dotted $color-grey-light-2;
     }
+  }
+}
+
+.heading-3 {
+  color: $color-white;
+  text-transform: uppercase;
+  font-size: 3rem;
+  padding-top: 1rem;
+  font-family: $font-headers;
+  font-weight: 400;
+  display: inline-block;
+  letter-spacing: 0.3rem;
+
+  &--dark {
+    color: $color-primary;
+    text-transform: uppercase;
+    font-size: 2rem;
+    padding-top: 1rem;
+    font-family: $font-headers;
+    font-weight: 400;
+    display: inline-block;
+    letter-spacing: 0.1rem;
   }
 }
 
