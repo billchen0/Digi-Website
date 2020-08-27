@@ -52,8 +52,6 @@ body {
   display: inline-block;
   letter-spacing: 0.5rem;
   transition: all 0.5s; }
-  .heading-2:hover {
-    transform: scale(1.05) translateY(-1rem) skew(2deg); }
   .heading-2::before {
     content: "";
     display: block;
@@ -170,6 +168,11 @@ body {
   align-items: flex-start;
   justify-content: center;
   grid-row-gap: 20px; }
+  .header__icon {
+    height: 10rem;
+    position: absolute;
+    top: 3rem;
+    left: 5rem; }
   .header__heading {
     font-size: 12rem;
     justify-self: center;
@@ -543,7 +546,7 @@ body {
     padding: 1rem 2rem;
     letter-spacing: 0.6rem;
     background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
-    background-size: 225%;
+    background-size: 235%;
     transition: all 0.4s; }
   .navbar__link:hover, .navbar__link:active {
     background-position: 100%;

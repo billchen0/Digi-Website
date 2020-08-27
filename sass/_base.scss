@@ -101,10 +101,6 @@ body {
   // effects
   transition: all 0.5s;
 
-  &:hover {
-    transform: scale(1.05) translateY(-1rem) skew(2deg);
-  }
-
   &::before {
     content: "";
     display: block;

@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="https://use.typekit.net/tws6het.css" />
 
     <title>Digi Digits | Putting the world within arms' reach</title>
+    <link rel="icon" href="img/digi-hands-1.jpg" />
   </head>
   <body>
     <nav class="navbar">
@@ -28,41 +29,60 @@
 
       <ul class="navbar__list">
         <li class="navbar__item">
-          <a href="#" class="navbar__link">About Us</a>
+          <a href="#home" class="navbar__link">Home</a>
         </li>
         <li class="navbar__item">
-          <a href="#" class="navbar__link">Our Goals</a>
+          <a href="#about" class="navbar__link">About Us</a>
         </li>
         <li class="navbar__item">
-          <a href="#" class="navbar__link">Our Team</a>
+          <a href="#goals" class="navbar__link">Our Goals</a>
         </li>
         <li class="navbar__item">
-          <a href="#" class="navbar__link">Gallery</a>
+          <a href="#team" class="navbar__link">Our Team</a>
         </li>
         <li class="navbar__item">
-          <a href="#" class="navbar__link">Contact Us</a>
+          <a href="#project" class="navbar__link">Gallery</a>
+        </li>
+        <li class="navbar__item">
+          <a href="#contact" class="navbar__link">Contact Us</a>
         </li>
       </ul>
     </nav>
 
-    <div class="container">
+    <!-- Home Section -->
+
+    <div class="container" id="home">
       <header class="header">
+        <img
+          class="header__icon"
+          src="img/favicon.png"
+          alt="Digi Digits Icon"
+        />
         <h1 class="header__heading heading-1">Digi Digits</h1>
         <h2 class="header__text margin-bottom-sm">
           Putting The World Within Arms’ Reach
         </h2>
 
-        <button type="button" class="header__btn btn--outline margin-bottom-sm">
+        <button
+          onclick="location.href = '#contact'"
+          type="button"
+          class="header__btn btn--outline margin-bottom-sm"
+        >
           Join Us
         </button>
-        <button type="button" class="header__btn btn--outline">
+        <button
+          onclick="window.open('https://secure.ddar.psu.edu/s/1218/2014/index.aspx?sid=1218&gid=1&pgid=658&cid=2321&dids=2263&bledit=1&appealcode=AD5C2','_blank')"
+          target="_blank"
+          type="button"
+          class="header__btn btn--outline"
+        >
           Donate
         </button>
       </header>
 
       <!-- About Section -->
 
-      <section class="about">
+      <section class="about" id="about">
         <h2 class="heading-2 about__heading">About Us</h2>
         <div class="about__container">
           <img
@@ -80,7 +100,12 @@
             the growing field of 3D printing as our organization combines
             corporate and family relations, business, engineering, architecture
             applications, and more.
-            <button class="about__btn btn--fill">Learn More &rarr;</button>
+            <button
+              onclick="window.open('https://orgcentral.psu.edu/organization/digidigits', '_blank')"
+              class="about__btn btn--fill"
+            >
+              Learn More &rarr;
+            </button>
           </p>
           <img class="about__img--2" src="img/about.svg" alt="About Image" />
         </div>
@@ -88,7 +113,7 @@
 
       <!-- Goals Section -->
 
-      <section class="goals">
+      <section class="goals" id="goals">
         <h2 class="heading-2">Our Goals</h2>
         <div class="goals__container">
           <div class="goals__element goals__element--1">
@@ -120,7 +145,7 @@
 
       <!-- Team Section -->
 
-      <section class="team">
+      <section class="team" id="team">
         <h2 class="heading-2">Our Team</h2>
         <div class="team__container">
           <div class="card">
@@ -449,7 +474,7 @@
 
       <!-- Project Section -->
 
-      <section class="project">
+      <section class="project" id="project">
         <div class="project__instagram" id="instafeed">
           <!-- SnapWidget -->
           <script src="https://snapwidget.com/js/snapwidget.js"></script>
@@ -466,7 +491,7 @@
 
       <!-- Contact Section -->
 
-      <section class="contact">
+      <section class="contact" id="contact">
         <h2 class="heading-2--light contact__heading">Contact Us!</h2>
         <div class="contact__container">
           <form action="#" class="contact__form">
@@ -533,7 +558,12 @@
               help us put the world within arms' reach!
             </h3>
 
-            <button class="contact__btn btn--fill">Donate! &rarr;</button>
+            <button
+              onclick="window.open('https://secure.ddar.psu.edu/s/1218/2014/index.aspx?sid=1218&gid=1&pgid=658&cid=2321&dids=2263&bledit=1&appealcode=AD5C2','_blank')"
+              class="contact__btn btn--fill"
+            >
+              Donate! &rarr;
+            </button>
           </div>
         </div>
       </section>
@@ -543,18 +573,22 @@
       <footer class="footer">
         <div class="footer__row--1">
           <svg class="footer__icon footer__icon-mail">
-            <a href="#"><use xlink:href="img/sprite.svg#icon-mail"></use></a>
+            <a href="mailto:digidigitspsu@gmail.com">
+              <use xlink:href="img/sprite.svg#icon-mail"></use>
+            </a>
           </svg>
           <svg class="footer__icon footer__icon-instagram">
-            <a href="#">
+            <a href="https://www.instagram.com/psudigidigits/">
               <use xlink:href="img/sprite.svg#icon-instagram"></use>
             </a>
           </svg>
           <svg class="footer__icon footer__icon-twitter">
-            <a href="#"><use xlink:href="img/sprite.svg#icon-twitter"></use></a>
+            <a href="https://twitter.com/PSU_Digi_Digits">
+              <use xlink:href="img/sprite.svg#icon-twitter"></use>
+            </a>
           </svg>
           <svg class="footer__icon footer__icon-facebook">
-            <a href="#">
+            <a href="https://www.facebook.com/digidigits">
               <use xlink:href="img/sprite.svg#icon-facebook2"></use>
             </a>
           </svg>
@@ -565,9 +599,15 @@
 
         <div class="footer__row--2">
           <ul class="footer__list">
-            <li><a href="#" class="footer__item">About</a></li>
-            <li><a href="#" class="footer__item">Contact Us</a></li>
-            <li><a href="#" class="footer__item">Donate</a></li>
+            <li><a href="#about" class="footer__item">About</a></li>
+            <li><a href="#contact" class="footer__item">Contact Us</a></li>
+            <li>
+              <a
+                onclick="window.open('https://secure.ddar.psu.edu/s/1218/2014/index.aspx?sid=1218&gid=1&pgid=658&cid=2321&dids=2263&bledit=1&appealcode=AD5C2','_blank')"
+                class="footer__item"
+                >Donate</a
+              >
+            </li>
           </ul>
         </div>
 
