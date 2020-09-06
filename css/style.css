@@ -329,7 +329,14 @@ body {
     height: 3rem;
     width: 3rem;
     margin: 2rem;
-    fill: #fff; }
+    fill: #fff;
+    cursor: pointer; }
+    .footer__icon-twitter:hover {
+      fill: blue; }
+    .footer__icon-instagram:hover {
+      fill: #8b008b; }
+  .footer__icon-link:link, .footer__icon-link:visited {
+    text-decoration: none; }
   .footer__list {
     list-style: none;
     display: flex;
@@ -411,6 +418,7 @@ body {
     grid-gap: 5rem; }
 
 .card {
+  cursor: pointer;
   height: 50rem;
   position: relative;
   perspective: 100rem; }
@@ -446,6 +454,7 @@ body {
         width: 10rem;
         border-radius: 50%;
         align-self: center;
+        background-position: cover;
         margin-bottom: 2rem; }
       .card__side--back-text::before {
         content: "\201C";
@@ -465,7 +474,19 @@ body {
     background-size: cover;
     clip-path: ellipse(90% 100% at 50% 0%); }
     .card__picture--1 {
-      background-image: url(../img/test.jpeg); }
+      background-image: url(../img/raiid.jpg); }
+    .card__picture--2 {
+      background-image: url(../img/masen.jpg); }
+    .card__picture--3 {
+      background-image: url(../img/hamed.jpg); }
+    .card__picture--4 {
+      background-image: url(../img/jack.png); }
+    .card__picture--5 {
+      background-image: url(../img/bill.jpeg); }
+    .card__picture--6 {
+      background-image: url(../img/nandini.jpg); }
+    .card__picture--7 {
+      background-image: url(../img/samson.png); }
   .card__information-container {
     display: grid;
     grid-template-rows: repeat(4, min-content);

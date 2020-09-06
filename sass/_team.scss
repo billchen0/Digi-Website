@@ -13,6 +13,7 @@
 }
 
 .card {
+  cursor: pointer;
   height: 50rem;
   position: relative;
   perspective: 100rem;
@@ -60,6 +61,7 @@
         width: 10rem;
         border-radius: 50%;
         align-self: center;
+        background-position: cover;
         margin-bottom: 2rem;
       }
 
@@ -93,7 +95,31 @@
     clip-path: ellipse(90% 100% at 50% 0%);
 
     &--1 {
-      background-image: url(../img/test.jpeg);
+      background-image: url(../img/raiid.jpg);
+    }
+
+    &--2 {
+      background-image: url(../img/masen.jpg);
+    }
+
+    &--3 {
+      background-image: url(../img/hamed.jpg);
+    }
+
+    &--4 {
+      background-image: url(../img/jack.png);
+    }
+
+    &--5 {
+      background-image: url(../img/bill.jpeg);
+    }
+
+    &--6 {
+      background-image: url(../img/nandini.jpg);
+    }
+
+    &--7 {
+      background-image: url(../img/samson.png);
     }
   }
 

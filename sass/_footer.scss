@@ -24,6 +24,22 @@
     width: 3rem;
     margin: 2rem;
     fill: $color-white;
+    cursor: pointer;
+
+    &-twitter:hover {
+      fill: blue;
+    }
+
+    &-instagram:hover {
+      fill: $color-magenta;
+    }
+  }
+
+  &__icon-link {
+    &:link,
+    &:visited {
+      text-decoration: none;
+    }
   }
 
   &__list {
