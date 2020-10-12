@@ -26,6 +26,16 @@ body {
   line-height: 1.6;
   font-weight: 400; }
 
+form {
+  margin-bottom: 0; }
+
+textarea,
+input,
+select {
+  margin: 0;
+  vertical-align: bottom;
+  resize: none; }
+
 .container {
   color: #fff;
   display: grid;
@@ -292,7 +302,7 @@ body {
     .contact__input:focus {
       outline: none;
       box-shadow: 0 1rem 2rem rgba(15, 76, 117, 0.1);
-      border-bottom: 3px solid #3282b8; }
+      border-bottom: 2px solid #3282b8; }
   .contact__input:placeholder-shown + .contact__label {
     opacity: 0;
     visibility: hidden;

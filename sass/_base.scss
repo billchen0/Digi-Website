@@ -57,6 +57,18 @@ body {
   font-weight: 400;
 }
 
+form {
+  margin-bottom: 0;
+}
+
+textarea,
+input,
+select {
+  margin: 0;
+  vertical-align: bottom;
+  resize: none;
+}
+
 .container {
   color: $color-white;
   display: grid;
